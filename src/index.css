@@ -1,0 +1,59 @@
+:root {
+  /* Color tokens — carbon ledger / passbook theme */
+  --paper: #FAF6ED;
+  --paper-card: #FFFDF8;
+  --ink: #1B3B2F;
+  --ink-soft: #2E5443;
+  --charcoal: #2B2B28;
+  --charcoal-soft: #6B6760;
+  --brass: #A6802E;
+  --brass-soft: #D9C9A3;
+  --debit-red: #A33B2E;
+  --credit-green: #2F6B4F;
+  --rule: #D8CFBC;
+  --transport-blue: #3B5F8A;
+  --energy-amber: #B07A1E;
+  --food-green: #3D7A52;
+
+  /* Type tokens */
+  --font-display: 'Lora', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(var(--paper), var(--paper));
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(27, 59, 47, 0.04) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input, select {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--brass-soft);
+}
